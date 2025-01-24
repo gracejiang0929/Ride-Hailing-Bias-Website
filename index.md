@@ -1,33 +1,37 @@
 ---
 layout: default
-title: Welcome to My Jekyll Site
+title: Welcome to Ride-Hailing Bias Website!
 ---
 
-# Hello World!
-This is my first GitHub Pages site using Jekyll.
+# Hello ALL!
+This is GitHub Pages site using Jekyll.
 
-**Your Name**: Rongjing Jiang  
+**Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
 **UCSD Email Address**: rojiang@ucsd.edu  
 
-**Section Name**: A10  
+**Section Name**: A10-2  
 **Mentor**: Emily Ramond and Greg Thein  
 
-## Prompts
+## About Our Project
 
-**1. What is the most interesting topic covered in your domain this quarter?**  
-Learning to use the IBM AI Fairness 360 Model to evaluate model bias using Medical Expenditure data has been particularly fascinating to me because it highlights the complexities of algorithmic fairness 
-in real-world scenarios. The ability to apply fairness metrics and see their practical implications in a high-stakes domain like healthcare has helped me better understand both the power and limitations of AI models.
+This project investigates potential biases in ride-hailing dynamic pricing algorithms, focusing on whether fare prices disproportionately impact neighborhoods with higher proportions of racial minorities in New York City. Building on prior research in Chicago and our findings on AI bias in healthcare prediction models, we aim to uncover disparities in ride-hailing fares by analyzing publicly available data from sources like New York City census data and Taxi and Limousine Commision (TLC) data on Uber and Lyft. The study involves preprocessing data, applying statistical techniques, and employing random-effects models to measure the relationship between neighborhood demographics and fare prices. We will also compare findings against traditional taxi fares to highlight differences in price discrimination. The primary output will be a research paper detailing methodologies, results, and policy recommendations to mitigate algorithmic bias, complemented by a poster presentation summarizing the findings. This work seeks to promote fairness and transparency in urban transportation systems.
 
-**2. Describe a potential investigation you would like to pursue for your Quarter 2 Project.**  
-I am interested in investigating whether restaurants categorized by specific ethnic cuisines receive lower inspection ratings compared to non-ethnic or mainstream restaurants. 
-This project could reveal biases in the inspection system, which may reflect cultural misunderstandings or stereotypes. Understanding these patterns could help improve 
-the fairness of inspection practices, ultimately impacting both restaurant owners and consumers.
 
-**3. What is a potential change you’d make to the approach taken in your current Quarter 1 Project?**  
-In Quarter 1, our group met mostly remotely, which sometimes made it difficult to communicate complex ideas effectively or keep everyone fully engaged. 
-For Quarter 2, we would like to meet at least once in person to foster better collaboration, build a stronger team dynamic, and tackle challenges more efficiently 
-by discussing problems directly. We believe that in-person interaction could enhance our productivity and lead to more effective brainstorming sessions.
+**1. Currect Progress?**  
+- Merge datasets
+- Finish EDA
+- Explore Potential Bias Mitigation Models 
+- Start Writing into the Literature
+- Setup website
 
-**4. What other techniques would you be interested in using in your project?**  
-I would be interested in exploring techniques like causal inference to understand the underlying reasons behind algorithmic biases and using reinforcement learning to 
-improve decision-making fairness in AI models. Additionally, I'd like to look into advanced bias mitigation methods beyond what we covered in Quarter 1, particularly those that involve adversarial debiasing.
+
+**2. Our Plans**  
+- Select Model and Implementation
+- Start on Poster Board
+- Finish Introduction, Start/Finish on Methods
+
+
+**3. Any Suggestions?**  
+
+
+
