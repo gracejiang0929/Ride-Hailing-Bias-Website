@@ -10,7 +10,7 @@ This is GitHub Pages site using Jekyll.
 **UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
 
 **Section Name**: A10-2  
-**Mentor**: Emily Ramond and Greg Thein  
+**Mentor**: Emily Ramond & Greg Thein  
 
 ## About Our Project
 
