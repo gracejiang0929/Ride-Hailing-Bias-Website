@@ -7,7 +7,7 @@ title: Welcome to Ride-Hailing Bias Website!
 This is GitHub Pages site using Jekyll.
 
 **Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
-**UCSD Email Address**: rojiang@ucsd.edu  
+**UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
 
 **Section Name**: A10-2  
 **Mentor**: Emily Ramond and Greg Thein  
