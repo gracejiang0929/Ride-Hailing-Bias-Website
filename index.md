@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome to Ride-Hailing Bias Website!
+title: Ride-Hailing Bias
 ---
 
 # Ride-Hailing Bias 
