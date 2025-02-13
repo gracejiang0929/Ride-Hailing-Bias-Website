@@ -3,7 +3,7 @@ layout: default
 title: Welcome to Ride-Hailing Bias Website!
 ---
 
-# Hello ALL!
+# Ride-Hailing Bias 
 This is GitHub Pages site using Jekyll.
 
 **Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
