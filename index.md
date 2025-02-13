@@ -1,10 +1,19 @@
 ---
 layout: default
 title: Welcome to Ride-Hailing Bias Website!
+
+# Ride-Hailing Bias 
+
+**Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
+**UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
+
+**Section Name**: A10-2  
+**Mentor**: Emily Ramond & Greg Thein  
+
+
 ---
 
 # Ride-Hailing Bias 
-This is GitHub Pages site using Jekyll.
 
 **Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
 **UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
@@ -33,32 +42,5 @@ This project investigates potential biases in ride-hailing dynamic pricing algor
 
 **3. Any Suggestions?**  
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>DSC180B Final Project</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    
-</head>
-
-
-
-
-
-
-</html>
 
