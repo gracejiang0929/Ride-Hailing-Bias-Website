@@ -1,16 +1,6 @@
 ---
 layout: default
 title: Welcome to Ride-Hailing Bias Website!
-
-# Ride-Hailing Bias 
-
-**Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
-**UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
-
-**Section Name**: A10-2  
-**Mentor**: Emily Ramond & Greg Thein  
-
-
 ---
 
 # Ride-Hailing Bias 
