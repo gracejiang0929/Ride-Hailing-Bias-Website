@@ -2,9 +2,6 @@
 layout: default
 title: Ride-Hailing Bias
 ---
-
-# Ride-Hailing Bias 
-
 **Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
 **UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
 
