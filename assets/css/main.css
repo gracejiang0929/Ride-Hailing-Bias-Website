@@ -102,8 +102,10 @@ input, select, textarea {
 		background-color: #2e3141;
 
 		/* original background */
-		background-image: linear-gradient(to top, rgba(107, 98, 21, 0.8), rgba(107, 98, 21, 0.8)), url("../../images/bg.jpg"); 
-/* 		rgba(107, 98, 21, 0.8) */
+		background-image: linear-gradient(to top, rgba(146, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); 
+		
+		
+		/* 		rgba(107, 98, 21, 0.8) */
 		/* 		background-image: repeating-linear-gradient(
 		        to top, 
 		        yellow 0%, yellow 25%, 
@@ -3590,7 +3592,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
+/* 			background-color: #2e3141; */
+			background-color: #9d914a;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
