@@ -231,46 +231,71 @@
 								<div class="inner">
 									<h2 class="major">Probing the Ride-Hailing</h2>
 									<p>
-										As ride-hailing services continue to shape urban mobility, understanding their pricing mechanisms is crucial for ensuring fairness and accessibility. Our research takes a deep dive into the factors influencing ride-hailing fares, 
+
+										We began by cleaning our NYC ride-hailing dataset and computing key features, including trip
+										distance, trip length, and a normalized cost metric—cost per mile (calculated as Base
+										Passenger Fare divided by Trip Distance). To capture potential price discrimination, we defined
+										a binary target, high_cost, by labeling rides as high cost if their cost per mile exceeded the
+										median value.
+
+										Next, we incorporated fairness into our analysis by creating protected attributes based on
+										neighborhood ethnic demographics (Black, Hispanic, White, Asian, and Other). For each
+										ethnicity, we generated binary indicators by comparing the respective percentage to its median
+										value.
+
+
+										<!-- As ride-hailing services continue to shape urban mobility, understanding their pricing mechanisms is crucial for ensuring fairness and accessibility. Our research takes a deep dive into the factors influencing ride-hailing fares, 
 										questioning whether these platforms unintentionally reinforce socioeconomic and racial disparities. By systematically analyzing trip data, demographic distributions, and pricing models, we probe into how algorithmic decision-making impacts different communities. 
-										Through this investigation, we aim to identify patterns of potential bias, assess fairness in fare structures, and explore strategies to mitigate inequities in ride-hailing services.
+										Through this investigation, we aim to identify patterns of potential bias, assess fairness in fare structures, and explore strategies to mitigate inequities in ride-hailing services. -->
 									</p>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Place Holder 1</h3>
+											<h3 class="major">Baseline Model</h3>
 											<p>
-												fill in ...
+												We trained a standard logistic regression model using the features (trip
+												distance, trip length, and cost per mile) to predict the high_cost target.
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Place Holder 2</h3>
+											<h3 class="major">Fairness-Aware Model</h3>
 											<p>
-												fill in ...
+												We applied the ExponentiatedGradient algorithm with an
+												Equalized Odds constraint. This approach ensures that the model's error rates (False
+												Positive and False Negative Rates) are similar across the protected groups, thus
+												mitigating bias.
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Place Holder 3</h3>
+											<h3 class="major">Equalized Odds</h3>
 											<p>
-												fill in ...
+												Equalized Odds was chosen because it ensures that the model's error rates—specifically the
+												False Positive Rate (FPR) and False Negative Rate (FNR)—are balanced across different
+												groups defined by protected attributes. This means that, regardless of group membership, the
+												likelihood of misclassification (either overcharging or undercharging in our context) remains
+												similar, helping to mitigate discriminatory outcomes.
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Place Holder 4</h3>
+											<h3 class="major">ExponentiatedGradient </h3>
 											<p>
-												fill in ...
+												ExponentiatedGradient is a fairness-aware algorithm that enforces constraints like Equalized
+												Odds during model training. It does this by iteratively reweighting training samples to minimize
+												prediction error while ensuring that the fairness constraint is satisfied. This approach allows us
+												to strike a balance between accuracy and fairness, reducing bias without completely sacrificing
+												model performance.
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 									</section>
 									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
+										<!-- <li><a href="#" class="button">Browse All</a></li> -->
 									</ul>
 								</div>
 							</section>
