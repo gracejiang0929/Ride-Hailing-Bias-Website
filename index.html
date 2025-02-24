@@ -118,8 +118,62 @@
 										<h2 class="major">Method</h2>
 										<p>
 
-											To understand potential biases in ride-hailing services, we conducted a structured data-driven analysis using publicly available ride data from the New York City Taxi 
-											and Limousine Commission (TLC). Here’s how we approached the study:
+											We began by cleaning our NYC ride-hailing dataset and computing key features, including trip
+											distance, trip length, and a normalized cost metric—cost per mile (calculated as Base
+											Passenger Fare divided by Trip Distance). To capture potential price discrimination, we defined
+											a binary target, high_cost, by labeling rides as high cost if their cost per mile exceeded the
+											median value.
+											
+											Next, we incorporated fairness into our analysis by creating protected attributes based on
+											neighborhood ethnic demographics (Black, Hispanic, White, Asian, and Other). For each
+											ethnicity, we generated binary indicators by comparing the respective percentage to its median
+											value.
+
+											Our modeling pipeline then involved two approaches:
+											1. Baseline Model: We trained a standard logistic regression model using the features (trip
+											distance, trip length, and cost per mile) to predict the high_cost target.
+
+											2. Fairness-Aware Model: We applied the ExponentiatedGradient algorithm with an
+											Equalized Odds constraint. This approach ensures that the model's error rates (False
+											Positive and False Negative Rates) are similar across the protected groups, thus
+											mitigating bias.
+
+											Equalized Odds was chosen because it ensures that the model's error rates—specifically the
+											False Positive Rate (FPR) and False Negative Rate (FNR)—are balanced across different
+											groups defined by protected attributes. This means that, regardless of group membership, the
+											likelihood of misclassification (either overcharging or undercharging in our context) remains
+											similar, helping to mitigate discriminatory outcomes.
+
+											ExponentiatedGradient is a fairness-aware algorithm that enforces constraints like Equalized
+											Odds during model training. It does this by iteratively reweighting training samples to minimize
+											prediction error while ensuring that the fairness constraint is satisfied. This approach allows us
+											to strike a balance between accuracy and fairness, reducing bias without completely sacrificing
+											model performance.
+
+											Metrics Used:
+											
+											Accuracy: Measures the overall correctness of the model's predictions.
+											False Positive Rate (FPR): The proportion of rides that should be classified as low-cost
+											but are incorrectly predicted as high-cost.
+											
+											False Negative Rate (FNR): The proportion of rides that should be classified as
+											high-cost but are misclassified as low-cost.
+											
+											Error Disparities: The absolute differences in FPR and FNR between subgroups
+											defined by protected attributes (e.g., neighborhoods above and below the median for a
+											specific ethnicity).
+											
+											Features Incorporated:
+											
+											Trip Distance (miles): The actual distance traveled, which influences fare.
+											
+											Trip Length (seconds): The duration of the ride, providing additional context on trip
+											dynamics.
+											
+											Cost per Mile (avg cost): A normalized metric calculated as Base Passenger Fare
+											
+											divided by Trip Distance. This feature helps adjust for trip length and isolates price discrepancies, 
+											offering a clearer view of potential price discrimination.
 			
 
 
