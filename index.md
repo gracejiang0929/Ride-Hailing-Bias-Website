@@ -1,53 +1,375 @@
----
-layout: default
-title: Ride-Hailing Bias
----
-**Team Members**: Wenbin Jiang, Ethan Lin & Rongjing Jiang  
-**UCSD Email Address**: wej002@ucsd.edu, etl003@ucsd.edu & rojiang@ucsd.edu  
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ride-Hailing Bias</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-**Section Name**: A10-2  
-**Mentor**: Emily Ramond & Greg Thein  
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-## Overview
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Ride-Hailing</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-This project investigates potential biases in ride-hailing dynamic pricing algorithms, focusing on whether fare prices disproportionately impact neighborhoods with higher proportions of racial minorities in New York City. Building on prior research in Chicago and our findings on AI bias in healthcare prediction models, we aim to uncover disparities in ride-hailing fares by analyzing publicly available data from sources like New York City census data and Taxi and Limousine Commision (TLC) data on Uber and Lyft. The study involves preprocessing data, applying statistical techniques, and employing random-effects models to measure the relationship between neighborhood demographics and fare prices. We will also compare findings against traditional taxi fares to highlight differences in price discrimination. The primary output will be a research paper detailing methodologies, results, and policy recommendations to mitigate algorithmic bias, complemented by a poster presentation summarizing the findings. This work seeks to promote fairness and transparency in urban transportation systems.
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Generic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav> -->
+
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Overview</a></li>
+								<li><a href="elements.html">Background</a></li>
+								
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+<!-- 							<div class="logo"><span class="icon fa-gem"></span></div> -->
+
+							<div class="logo"><span class="fa fa-taxi"></span></div>
+							
+							
+							<h2>Ride-Hailing Bias</h2>
+							<p><a href="https://github.com/gracejiang0929/Bias-Detection-and-Mitigation-in-Ride-Hailing.git">GitHub</a></p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/icon02.jpeg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Overview</h2>
+										<p> This project investigates potential biases in ride-hailing dynamic pricing algorithms, focusing on whether fare prices disproportionately impact neighborhoods with higher proportions of racial minorities in New York City. 
+											Building on prior research in Chicago and our findings on AI bias in healthcare prediction models, we aim to uncover disparities in ride-hailing fares by analyzing publicly available data from sources like 
+											New York City census data and Taxi and Limousine Commision (TLC) data on Uber and Lyft. 
+											
+											<!-- The study involves preprocessing data, applying statistical techniques, and employing random-effects models to measure 
+											the relationship between neighborhood demographics and fare prices.  -->
+											
+											<!-- We will also compare findings against traditional taxi fares to highlight differences in price discrimination. 
+											The primary output will be a research paper detailing methodologies, results, and policy recommendations to mitigate algorithmic bias, complemented by a poster presentation summarizing the findings. 
+											This work seeks to promote fairness and transparency in urban transportation systems. -->
+										</p>
+										<!-- <a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/icon03.jpeg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Background</h2>
+										<p>
+											The rapid expansion of ride-hailing platforms has introduced both opportunities and challenges in urban transportation. While these services enhance mobility, studies suggest that pricing algorithms may inadvertently reinforce economic and racial disparities. 
+											Prior research indicates that neighborhoods with higher poverty rates and larger minority populations may experience more frequent surge pricing, raising concerns about fairness in dynamic fare calculations. 
+											Our study builds upon existing literature by examining ride-hailing data from New York City to determine whether pricing disparities exist and, if so, how they can be mitigated through algorithmic interventions.	
+										</p>
+										<!-- <a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/icon08.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Data</h2>
+										<p>
+											Our analysis relies on ride-hailing trip data from the New York City Taxi and Limousine Commission (TLC), 
+											which records millions of for-hire vehicle trips from services like Uber and Lyft. 
+											This dataset includes details such as trip duration, distance, fare breakdowns, pickup and drop-off locations, 
+											and vehicle type. Additionally, we integrate demographic data from the NYC Neighborhood Tabulation Areas (NTA), 
+											which provides insights into socioeconomic indicators like income levels, poverty rates, and racial composition. 
+											By merging these datasets, we aim to uncover potential biases in pricing while accounting for external factors like 
+											geography and infrastructure.
+										</p>
+										<!-- <a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<!-- <section id="four" class="wrapper spotlight style4">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/icon03.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Method</h2>
+										<p>
+											To understand potential biases in ride-hailing services, we conducted a structured data-driven analysis using publicly available ride data 
+											from the New York City Taxi and Limousine Commission (TLC). Here’s how we approached the study:
+
+											Our analysis relies on ride-hailing trip data from the New York City Taxi and Limousine Commission (TLC), 
+											which records millions of for-hire vehicle trips from services like Uber and Lyft. 
+											This dataset includes details such as trip duration, distance, fare breakdowns, pickup and drop-off locations, 
+											and vehicle type. Additionally, we integrate demographic data from the NYC Neighborhood Tabulation Areas (NTA), 
+											which provides insights into socioeconomic indicators like income levels, poverty rates, and racial composition. 
+											By merging these datasets, we aim to uncover potential biases in pricing while accounting for external factors like 
+											geography and infrastructure. -->
+										<!-- </p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section> -->
+
+							<section id="four" class="wrapper alt style4">
+								<div class="inner">
+									<h2 class="major">Method</h2>
+									<p>
+										As ride-hailing services continue to shape urban mobility, understanding their pricing mechanisms is crucial for ensuring fairness and accessibility. Our research takes a deep dive into the factors influencing ride-hailing fares, 
+										questioning whether these platforms unintentionally reinforce socioeconomic and racial disparities. By systematically analyzing trip data, demographic distributions, and pricing models, we probe into how algorithmic decision-making impacts different communities. 
+										Through this investigation, we aim to identify patterns of potential bias, assess fairness in fare structures, and explore strategies to mitigate inequities in ride-hailing services.
+									</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/image1_heatmap_tlc.png" alt="" /></a>
+											<h3 class="major">Pre-processing</h3>
+											<p>
+												The TLC dataset contains 19,663,930 rows and 24 columns
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+
+										<!-- <article class="col-6 col-12-xsmall work-item">
+											<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/fulls/01.jpg" alt="" /></a>
+											<h3 class="major">Pre-processing</h3>
+											<p>
+												The TLC dataset contains 19,663,930 rows and 24 columns
+											</p>
+										</article> -->
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a> -->
+											<a href="#" class="image"><img src="images/image2_nta_missing.png" alt="" /></a>
+											<h3 class="major">Data Cleaning</h3>
+											<p>
+												Analysis of 4.56 million NYC TLC trips reveals average distances (4.86 miles), durations (19 minutes), and fares ($24.08 base), 
+												though high variability (SD: 6.47 miles) and anomalies like negative fares suggest data quality issues. 
+												Strong distance-duration (0.89) and distance-fare (0.82) correlations align with pricing models, 
+												while moderate driver pay-tip links (0.56) and weaker trip metric ties highlight opportunities to refine fare strategies and optimize compensation, guiding operational decisions and predictive analytics.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a> -->
+											 <a href="#" class="image"><img src="images/image3_racial_ethnic NYC.png" alt="" /></a>
+											<h3 class="major">Merge Data</h3>
+											<p>
+												Histograms of NYC’s Neighborhood Tabulation Areas (NTAs) reveal stark disparities in racial/ethnic distributions, with Asian, Black/African American, 
+												and Hispanic/Latino populations concentrated in hyper-segregated pockets (e.g., 10–80% ranges), while the “Other” 
+												category remains tightly clustered, reflecting NYC’s polarized neighborhood diversity. 
+												A merged 60-column dataset—integrating ride-hailing trip metrics (e.g., fares, distances) with NTA 
+												demographic/geographic data—was streamlined by removing redundancies and renaming technical fields, 
+												enabling granular analysis of fare disparities and service accessibility across socioeconomic communities to inform equitable policy and operational strategies.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+											<!-- <a href="#" class="image"><img src="images/image10_Top10_PickUpZones.png" alt="" /></a> -->
+											<!-- <a href="#" class="image"><img src="images/image11_Top10_DropOffZones..png" alt="" /></a> -->
+											<a href="#" class="image"><img src="images/image9_Top 5 Pick-Up Zones.png" alt="" /></a>
+
+											<h3 class="major">Exploratory Data Analysis Insights</h3>
+											<p>
+												Analysis of NYC ride-hailing dynamics reveals peak weekday rush-hour demand, 35% surge in rain-dependent requests 
+												(especially in transit-limited zones), and neighborhood-specific price elasticity (high-income areas withstand surge pricing 
+												while others see demand drops), alongside 20-30% longer outer-borough wait times and higher cancellations in low-density areas. 
+												These patterns highlight opportunities for zone-specific driver incentives, equity-focused pricing models, and predictive 
+												algorithms to improve service reliability and reduce geographic disparities citywide.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Five -->
+							<section id="five" class="wrapper alt style5">
+								<div class="inner">
+									<h2 class="major">Probing the Ride-Hailing</h2>
+									<p>
+
+										We began by cleaning our NYC ride-hailing dataset and computing key features, including trip
+										distance, trip length, and a normalized cost metric—cost per mile (calculated as Base
+										Passenger Fare divided by Trip Distance). To capture potential price discrimination, we defined
+										a binary target, high_cost, by labeling rides as high cost if their cost per mile exceeded the
+										median value.
+
+										Next, we incorporated fairness into our analysis by creating protected attributes based on
+										neighborhood ethnic demographics (Black, Hispanic, White, Asian, and Other). For each
+										ethnicity, we generated binary indicators by comparing the respective percentage to its median
+										value.
 
 
-**1. Currect Progress?**  
-- Merge datasets
-- Finish EDA
-- Explore Potential Bias Mitigation Models 
-- Start Writing into the Literature
-- Setup website
+										<!-- As ride-hailing services continue to shape urban mobility, understanding their pricing mechanisms is crucial for ensuring fairness and accessibility. Our research takes a deep dive into the factors influencing ride-hailing fares, 
+										questioning whether these platforms unintentionally reinforce socioeconomic and racial disparities. By systematically analyzing trip data, demographic distributions, and pricing models, we probe into how algorithmic decision-making impacts different communities. 
+										Through this investigation, we aim to identify patterns of potential bias, assess fairness in fare structures, and explore strategies to mitigate inequities in ride-hailing services. -->
+									</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pred_errors_by_race_group.png" alt="" /></a>
+											<h3 class="major">Baseline Model</h3>
+											<p>
+												We trained a standard logistic regression model using the features (trip
+												distance, trip length, and cost per mile) to predict the high_cost target.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">Fairness-Aware Model</h3>
+											<p>
+												We applied the ExponentiatedGradient algorithm with an
+												Equalized Odds constraint. This approach ensures that the model's error rates (False
+												Positive and False Negative Rates) are similar across the protected groups, thus
+												mitigating bias.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/accuracy_comp_by_ethnicity.png" alt="" /></a>
+											<h3 class="major">Equalized Odds</h3>
+											<p>
+												Equalized Odds was chosen because it ensures that the model's error rates—specifically the
+												False Positive Rate (FPR) and False Negative Rate (FNR)—are balanced across different
+												groups defined by protected attributes. This means that, regardless of group membership, the
+												likelihood of misclassification (either overcharging or undercharging in our context) remains
+												similar, helping to mitigate discriminatory outcomes.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">ExponentiatedGradient </h3>
+											<p>
+												ExponentiatedGradient is a fairness-aware algorithm that enforces constraints like Equalized
+												Odds during model training. It does this by iteratively reweighting training samples to minimize
+												prediction error while ensuring that the fairness constraint is satisfied. This approach allows us
+												to strike a balance between accuracy and fairness, reducing bias without completely sacrificing
+												model performance.
+											</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+									</section>
+									<ul class="actions">
+										<!-- <li><a href="#" class="button">Browse All</a></li> -->
+									</ul>
+								</div>
+							</section>
+
+					</section>
 
 
-**2. Our Plans**  
-- Select Model and Implementation
-- Start on Poster Board
-- Finish Introduction, Start/Finish on Methods
+					<!-- Six -->
+					<section id="six" class="wrapper spotlight style6">
+						<div class="inner">
+							<a href="#" class="image"><img src="images/res1.png" alt="" /></a>
+							<div class="content">
+								<h2 class="major">Result</h2>
+								<p>
+									We evaluated the performance of both a baseline logistic regression model and a fairness-aware model (using the ExponentiatedGradient algorithm 
+									with an Equalized Odds constraint) across several protected attributes representing different ethnic groups (Black, Hispanic, White, Asian, and Other). 
+									In all cases, the baseline model achieved an accuracy of 87.8\%. However, when fairness constraints were applied, overall accuracy generally decreased as a trade-off for reducing bias.
+								</p>
+								<!-- <a href="#" class="special">Learn more</a> -->
+							</div>
+						</div>
+					</section>
 
+				<!-- Footer -->
+<!-- 					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+ -->
+			</div>
 
-**3. Any Suggestions?**  
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-## Background
-
-
-## Data
-
-
-
-
-## Method
-
-
-
-
-
-
-## Model
-
-
-
-
-## Team
-
+	</body>
+</html>
