@@ -181,10 +181,14 @@
 											<a href="#" class="image"><img src="images/image2_nta_missing.png" alt="" /></a>
 											<h3 class="major">Data Cleaning</h3>
 											<p>
-												Analysis of 4.56 million NYC TLC trips reveals average distances (4.86 miles), durations (19 minutes), and fares ($24.08 base), 
+												Analysis of 4.56 million NYC TLC trips shows strong correlations between distance, duration, and fare (>0.80), 
+												while weaker ties to driver compensation (0.56) identify key areas for fare strategy improvements.
+
+
+												<!-- Analysis of 4.56 million NYC TLC trips reveals average distances (4.86 miles), durations (19 minutes), and fares ($24.08 base), 
 												though high variability (SD: 6.47 miles) and anomalies like negative fares suggest data quality issues. 
 												Strong distance-duration (0.89) and distance-fare (0.82) correlations align with pricing models, 
-												while moderate driver pay-tip links (0.56) and weaker trip metric ties highlight opportunities to refine fare strategies and optimize compensation, guiding operational decisions and predictive analytics.
+												while moderate driver pay-tip links (0.56) and weaker trip metric ties highlight opportunities to refine fare strategies and optimize compensation, guiding operational decisions and predictive analytics. -->
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
@@ -194,12 +198,16 @@
 											 <a href="#" class="image"><img src="images/image3_racial_ethnic NYC.png" alt="" /></a>
 											<h3 class="major">Merge Data</h3>
 											<p>
-												Histograms of NYC’s Neighborhood Tabulation Areas (NTAs) reveal stark disparities in racial/ethnic distributions, with Asian, Black/African American, 
+												Histograms of NYC's Neighborhood Tabulation Areas reveal stark racial/ethnic segregation patterns, with Asian, Black, and Hispanic populations concentrated in distinct pockets 
+												while our merged 60-column dataset integrates ride-hailing metrics with demographic data to analyze fare disparities across 
+												socioeconomic communities.
+
+												<!-- Histograms of NYC’s Neighborhood Tabulation Areas (NTAs) reveal stark disparities in racial/ethnic distributions, with Asian, Black/African American, 
 												and Hispanic/Latino populations concentrated in hyper-segregated pockets (e.g., 10–80% ranges), while the “Other” 
 												category remains tightly clustered, reflecting NYC’s polarized neighborhood diversity. 
 												A merged 60-column dataset—integrating ride-hailing trip metrics (e.g., fares, distances) with NTA 
 												demographic/geographic data—was streamlined by removing redundancies and renaming technical fields, 
-												enabling granular analysis of fare disparities and service accessibility across socioeconomic communities to inform equitable policy and operational strategies.
+												enabling granular analysis of fare disparities and service accessibility across socioeconomic communities to inform equitable policy and operational strategies. -->
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
@@ -211,11 +219,14 @@
 
 											<h3 class="major">Exploratory Data Analysis Insights</h3>
 											<p>
-												Analysis of NYC ride-hailing dynamics reveals peak weekday rush-hour demand, 35% surge in rain-dependent requests 
+												Analysis of NYC ride-hailing reveals demand peaks during weekday rush hours with 35% higher requests during rainfall, alongside price elasticity variations across neighborhoods and 20-30% longer wait times in outer boroughs, 
+												highlighting opportunities for zone-specific incentives and equity-focused pricing models.
+												
+												<!-- Analysis of NYC ride-hailing dynamics reveals peak weekday rush-hour demand, 35% surge in rain-dependent requests 
 												(especially in transit-limited zones), and neighborhood-specific price elasticity (high-income areas withstand surge pricing 
 												while others see demand drops), alongside 20-30% longer outer-borough wait times and higher cancellations in low-density areas. 
 												These patterns highlight opportunities for zone-specific driver incentives, equity-focused pricing models, and predictive 
-												algorithms to improve service reliability and reduce geographic disparities citywide.
+												algorithms to improve service reliability and reduce geographic disparities citywide. -->
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
@@ -259,37 +270,30 @@
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Fairness-Aware Model</h3>
+											<a href="#" class="image"><img src="images/accuracy_comp_by_ethnicity.png" alt="" /></a>
+											<h3 class="major">Equalized Odds</h3>
 											<p>
-												We applied the ExponentiatedGradient algorithm with an
-												Equalized Odds constraint. This approach ensures that the model's error rates (False
-												Positive and False Negative Rates) are similar across the protected groups, thus
-												mitigating bias.
+												Equalized Odds balances the False Positive and False Negative Rates across protected groups. 
+												This ensures that misclassification risks—whether overcharging 
+												or undercharging—remain similar for all groups, reducing discriminatory outcomes.
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/accuracy_comp_by_ethnicity.png" alt="" /></a>
-											<h3 class="major">Equalized Odds</h3>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">ExponentiatedGradient</h3>
 											<p>
-												Equalized Odds was chosen because it ensures that the model's error rates—specifically the
-												False Positive Rate (FPR) and False Negative Rate (FNR)—are balanced across different
-												groups defined by protected attributes. This means that, regardless of group membership, the
-												likelihood of misclassification (either overcharging or undercharging in our context) remains
-												similar, helping to mitigate discriminatory outcomes.
+												ExponentiatedGradient enforces fairness constraints like Equalized Odds by iteratively reweighting training samples to minimize error while satisfying the fairness requirement. 
+												This method balances accuracy and fairness, reducing bias without a major performance loss.
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">ExponentiatedGradient </h3>
+											<h3 class="major">Fairness-aware model </h3>
 											<p>
-												ExponentiatedGradient is a fairness-aware algorithm that enforces constraints like Equalized
-												Odds during model training. It does this by iteratively reweighting training samples to minimize
-												prediction error while ensuring that the fairness constraint is satisfied. This approach allows us
-												to strike a balance between accuracy and fairness, reducing bias without completely sacrificing
-												model performance.
+												We applied ExponentiatedGradient with an Equalized Odds constraint to balance 
+												false positive and negative rates across protected groups, thereby mitigating bias.
 											</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
