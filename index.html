@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Ride-Hailing Bias</title>
+		<title>Is Uber Racist?: Bias Detection and Mitigation in NYC Ride-Hailing Data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,11 +15,14 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Ride-Hailing</a></h1>
+						<!-- <h1><a href="index.html">Overview</a></h1>						 -->
+
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
+
+					
 
 				<!-- Menu -->
 					<!-- <nav id="menu">
@@ -44,9 +43,11 @@
 						<div class="inner">
 							<h2>Menu</h2>
 							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Overview</a></li>
-								<li><a href="elements.html">Background</a></li>
+								<li><a href="#one">Home</a></li>
+								<li><a href="#four">Method</a></li>
+								<li><a href="#five">Probing The Ride-Hailing</a></li>
+								<li><a href="#six">Result</a></li>
+								<li><a href="#banner">Team</a></li>
 								
 							</ul>
 							<a href="#" class="close">Close</a>
@@ -56,15 +57,195 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-<!-- 							<div class="logo"><span class="icon fa-gem"></span></div> -->
+								<!-- <div class="logo"><span class="icon fa-gem"></span></div> -->
+								<!-- <div class="logo"><span class="fa fa-taxi"></span></div> -->
 
-							<div class="logo"><span class="fa fa-taxi"></span></div>
+								<div class="car-icons">
+									<i class="fas fa-car-side fa-6x" style="color: #ffdd00;"></i>
+									<i class="fas fa-car-side fa-5x" style="color: #ffcc00;"></i>
+									<i class="fas fa-car-side fa-4x" style="color: #ffaa00;"></i>
+									<i class="fas fa-car-side fa-3x" style="color: #ff8800;"></i>
+									<i class="fas fa-car-side fa-2x" style="color: #ff6600;"></i>
+								</div>
+								
+								<!-- <style>
+									.car-icons {
+										display: flex;
+										justify-content: left;
+										align-items: left;
+										gap: 40px; /* Increased space between icons */
+									}
+								</style> -->
+
+								<style>
+									.car-icons {
+										display: flex;
+										justify-content: flex-start;
+										align-items: center;
+										gap: 40px; /* Increased space between icons */
+									}
+								
+									.car {
+										opacity: 0;
+										transform: translateX(-50px); /* Start off-screen to the left */
+										animation: appear 1s ease-in-out forwards;
+									}
+								
+									
+
+								</style>
+
+								
+								
 							
+							<h2>Is Uber Racist?: Bias Detection and Mitigation in NYC Ride-Hailing Data</h2>
+
+							<div class="resources">
+								<!-- <a href="https://github.com/gracejiang0929/Bias-Detection-and-Mitigation-in-Ride-Hailing.git" target="_blank">
+									<i class="fab fa-github fa-3x"></i> GitHub
+								</a> -->
+								
+								
+								<!-- GitHub with Car Icon -->
+								<a href="https://github.com/gracejiang0929/Bias-Detection-and-Mitigation-in-Ride-Hailing.git" target="_blank">
+									<span class="fa-stack fa-3x">
+										<!-- <i class="fas fa-circle fa-stack-2x"></i> Background -->
+										<i class="fab fa-github fa-stack-1x" style="color: #ffaa00;"></i> <!-- Main Icon -->
+										<!-- <i class="fas fa-car-side fa-stack-1x fa-inverse" style="font-size: 0.5em; position: absolute; bottom: -5px;"></i> Car Inside -->
+									</span>
+									<p>GitHub</p>
+								</a>
+
+
+								<!-- Report with Car Icon -->
+								<a href="path-to-report.pdf" target="_blank">
+									<span class="fa-stack fa-3x">
+										<!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+										<i class="fas fa-file-alt fa-stack-1x" style="color: #ffaa00;"></i>
+										<!-- <i class="fas fa-car-side fa-stack-1x fa-inverse" style="font-size: 0.5em; position: absolute; bottom: -5px;"></i> -->
+									</span>
+									<p>Report</p>
+								</a>
+
+								<!-- Dataset with Car Icon -->
+								<a href="path-to-dataset.csv" target="_blank">
+									<span class="fa-stack fa-3x">
+										<!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+										<i class="fas fa-database fa-stack-1x" style="color: #ffaa00;"></i>
+										<!-- <i class="fas fa-car-side fa-stack-1x fa-inverse" style="font-size: 0.5em; position: absolute; bottom: -5px;"></i> -->
+									</span>
+									<p>Dataset</p>
+								</a>
+
+
+								<!-- <a href="path-to-report.pdf" target="_blank">
+									<i class="fas fa-file-alt fa-3x"></i> Report
+								</a>
+								<a href="path-to-dataset.csv" target="_blank">
+									<i class="fas fa-database fa-3x"></i> Dataset
+								</a> -->
+							</div>
+
+							<!-- Team Members Section -->
+							<div class="team">
+								<div class="member">
+									<img src="path-to-member1-photo.jpg" alt="" class="member-photo">
+									<p><a href="https://github.com/member1username" target="_blank">Wenbing Jiang</a></p>
+								</div>
+								<div class="member">
+									<img src="path-to-member2-photo.jpg" alt="" class="member-photo">
+									<p><a href="https://github.com/member2username" target="_blank">Ethan Lin</a></p>
+								</div>
+								<div class="member">
+									<img src="images/rojiang02.png" alt="" class="member-photo">
+									<p><a href="https://www.linkedin.com/in/rongjing-jiang/" target="_blank">Rongjing Jiang</a></p>
+								</div>
+							</div>
+
+							<!-- Resources -->
 							
-							<h2>Ride-Hailing Bias</h2>
-							<p><a href="https://github.com/gracejiang0929/Bias-Detection-and-Mitigation-in-Ride-Hailing.git">GitHub</a></p>
+
+							<!-- <p><a href="https://github.com/gracejiang0929/Bias-Detection-and-Mitigation-in-Ride-Hailing.git">GitHub</a></p> -->
 						</div>
 					</section>
+
+					
+
+				<!-- Styling -->
+					<style>
+						.team {
+							display: flex;
+							justify-content: center;
+							gap: 30px; /* Space between members */
+							margin-bottom: -75px;
+							padding-top:75px;
+							flex-wrap: wrap; /* Wrap if screen is too small */
+							
+						}
+
+						/* .member {
+							text-align: center;
+							flex: 1;
+							min-width: 150px; /* Ensures it resizes properly
+						} */
+
+						.member {
+        					text-align: center;
+        					flex: 1;
+    						}
+
+						.member-photo {
+							width: 100px; /* Adjust as needed */
+							height: 100px;
+							border-radius: 50%;
+							object-fit: cover;
+							border: 2px solid #fff;
+							box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+						}
+
+
+						.resources {
+							display: flex;
+							justify-content: flex-start; /* Align icons to the left */
+							align-items: center;
+							gap: 60px; /* Space between icons */
+							margin-top: 20px;
+							/* padding-left: 0%; Adjust this value based on Wenbing Jiang's position */
+							border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+							
+						}
+
+						.resources a {
+							text-decoration: none;
+							/* color: black; */
+							color: orange;
+							font-size: 20px;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+
+						.resources i {
+							margin-bottom: 5px; /* Space between icon and text */
+						}
+
+						.resources p {
+							margin: 50px 0 0 0;
+						}
+
+						
+
+
+
+					</style>
+
+					
+
+				
+				
+
+					
+
 
 				<!-- Wrapper -->
 					<section id="wrapper">
